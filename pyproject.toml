@@ -1,0 +1,25 @@
+[project]
+name = "reflex-chatapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Leonard", email = "phunghungbinh.work@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "asyncio>=4.0.0",
+    "reflex>=0.11.0",
+    "unzip>=1.0.0",
+]
+
+[project.scripts]
+reflex-chatapp = "app:app"
+
+[tool.uv.build-backend]
+module-name = "app"
+module-root = ""
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
