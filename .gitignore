@@ -13,3 +13,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# agent/session scratch state
+.agent-teams/
+.dsh-mattskillsdeck-cache/
